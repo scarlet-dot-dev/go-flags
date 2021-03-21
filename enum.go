@@ -9,6 +9,8 @@ import (
 )
 
 // EnumFlag implements a flag.Value with a fixed set of valid values.
+//
+// Based on the enumflag implementation in HashiCorp's Packer.
 type EnumFlag struct {
 	target  *string
 	options []string
